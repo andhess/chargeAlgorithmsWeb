@@ -13,7 +13,23 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     </head>
     <body>
-        {{ content }}
+        <div class="wrapper">
+            <div class="header">
+                <h1>Charging Algorithms</h1>
+                <ul>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/model">Model</a></li>
+                    <li><a href="/project">Project</a></li>
+                    <li><a href="/team">Team</a></li>
+                </ul>
+            </div>
+            <div class="body">
+                {{ content }}
+            </div>
+            <div class="footer">
+                <small>copyright 2013</small>
+            </div>
+        </div>
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>
