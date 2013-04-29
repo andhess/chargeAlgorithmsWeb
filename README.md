@@ -7,6 +7,7 @@ It features 3 page styles:
 * content page (with sections for explaining each aspect of project)
 * team page 
 
+Thanks to [@philipithomas](https://github.com/philipithomas) for the Jekyll references.
 
 #Visit
 
