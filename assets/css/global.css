@@ -37,6 +37,11 @@
 
 .header{
     padding-top: 20px;
+    margin-bottom: 25px;
+}
+
+.blob{
+    position: fixed;
 }
 
 /* Sidenav for Docs
