@@ -16,3 +16,8 @@ Figuring out hosting right now with my university, will post link soon.
 #Use it Yourself
 
 This site can be easily used for any sort of individual or group project.  To use, fork and get started.
+
+#To Do
+
+* make the sidenav float and highlight your current section
+* add my own content to it
