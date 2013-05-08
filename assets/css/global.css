@@ -45,12 +45,16 @@
   text-align: center;
 }
 
+.span8 tr:first-child{
+  text-align: left;
+}
+
 .wtf{
   padding-left: 20px;
 }
 
 .sources{
-  margin-top: 20px;
+  marginx-top: 20px;
 }
 
 /* Sidenav for Docs
