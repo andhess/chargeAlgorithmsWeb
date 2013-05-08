@@ -41,12 +41,21 @@
     padding: 10px 0px 10px 0px;
 }
 
+.span8 table{
+  text-align: center;
+}
+
+.span8 td:first-child{
+  text-align: left;
+  padding-left: 5px;
+}
+
 .wtf{
   padding-left: 20px;
 }
 
 .sources{
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 /* Sidenav for Docs

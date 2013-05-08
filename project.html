@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Project
-permalink: /project/
+permalink: /project.html
 ---
 
 <!-- side nav -->
@@ -13,9 +13,9 @@ permalink: /project/
 
         <ul class="nav nav-list bs-docs-sidenav">
             <li><a href="#background"><i class="icon-chevron-right"></i> Background</a></li>
+            <li><a href="#goals"><i class="icon-chevron-right"></i> Goals</a></li>
             <li><a href="#method"><i class="icon-chevron-right"></i> Method</a></li>
             <li><a href="#model"><i class="icon-chevron-right"></i> Model</a></li>
-            <li><a href="#data"><i class="icon-chevron-right"></i> Data</a></li>
             <li><a href="#analytics"><i class="icon-chevron-right"></i> Analytics</a></li>
             <li><a href="#conclusion"><i class="icon-chevron-right"></i> Conclusion</a></li>
         </ul>
@@ -25,31 +25,207 @@ permalink: /project/
     <section id="background">
         <h3>Background</h3>
 
-        <p>LOTS OF TEXT</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>LOTS OF TEXT</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>LOTS OF TEXT</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>LOTS OF TEXT</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>LOTS OF TEXT</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>With the growing public awareness of clean energy and efforts towards a sustainable society, the demand for plug-in hybrid electric vehicles (PHEVs) and electric vehicles (EVs) has been increasing steadily over the past decade. These vehicles utilize rechargeable batteries or other energy storage devices, and are much more energy-efficient and environmentally friendly than traditional gasoline or diesel vehicles.  As these vehicles become more common, the charging demands of of many PHEVs and EVs could raise problems to the power grid - increased demand for electricity and unwanted peak loads due to simultaneous charging.  By having charging stations employ smart scheduling algorithms, increased load can be reduced, and spikes in demand can be more evenly distributed.</p>
+    </section>
+    <section id="Goals">
+        <h3>Goals</h3>
+
+        <ul>
+            <li>Research the charging demands of electric vehicles on the power grid</li>
+            <li>Create a realistic simulation of EVs arriving at a parking lot with various charging requirements</li>
+            <li>Development and implement different scheduling algorithms and compare them on different metrics</li>
+            <li>From simulation data, determine which algorithms perform best in particular conditions</li>
+        </ul>
     </section>
     <section id="method">
         <h3>Method</h3>
-        <p>LOTS OF TEXT</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>After reading some papers written by experts in the field (see <a href="sources.html">sources</a>), we outlined which algorithms we thought were important to test and then began weighing out the different options on implementation.  We ultimately decided on building a complete simulation model from scratch in <a href="http://www.python.org/">Python</a>. This language allowed us to build quickly, without losing too much performance. It also is very easy use from an object-oriented sense, which was vital for a program of this complexity. We built a CSV output system into our model, and then did all data processing and analysis in <a href="http://www.mathworks.com/products/matlab/">Matlab</a>.
     </section>
     <section id="model">
         <h3>Model</h3>
-        <p>LOTS OF TEXT</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </section>
-    <section id="data">
-        <h3>Data</h3>
-        <p>LOTS OF TEXT</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h5>As with every simulation, ours cannot be a perfect representation of the physical world.  Our Python model simplifies some aspects, but takes most components into consideration.  Below are some of its properties:</h5>
+        <br>
+        <ul>
+            <li>Vehicles arrive with a given charge level, desired charge, a time they need to leave by, and a battery capacity</li>
+            <li>Vehicles arrive according to a Poisson Distribution that has a specified average arrival rate</li>
+            <li>Charging stations have a limited number of charge ports.  Must schedule vehicles to be charged at certain times</li>
+            <li>The charging station will determine how to schedule the vehicle for charging based on the algorithm being used</li>
+            <li>Some algorithms use admission control, which will turn a vehicle away if it can’t fully accommodate it</li>
+            <li>The algorithms operate in real time.  They do not have any knowledge of future events and make their decisions based off available information.</li>
+            <li>Profit is collected from finished jobs.  Partial profit is collected from incomplete jobs with a fixed penalty.  There is no penalty for declined vehicles.</li>
+            <li>Vehicles charge at a linear rate - in reality vehicles charge on a logarithmic curve</li>
+            <li>All simulations are done in discrete time.  The model advances at intervals of 1 minute</li>
+            <li>New vehicles can arrive at the beginning of each minute</li>
+            <li>At the end of each minute, charge is given to EVs that were in the charge ports and the algorithm makes calculations to determine if any changes need to be made on the new state.</li>
+            <li>Changes occur if EV finished charging, hits its deadline, or a more important vehicle arrived. A vehicle importance is calculated based on the algorithm being used.</li>
+        </ul>
+        <br>
+        <h5>Below is a description of the types of algorithms that we built.</h5>
+        <br>
+        <p><strong>FCFS:</strong> First Come First Serve - EVs are charged in order of their arrival time</br>
+           <strong>EDF:</strong> Earliest Deadline First - EVs are charged in order of their deadline<br><br>
+           <em>Laxity = 1 - ( time required to charge / total time at the lot )</em><br><br>
+           <strong>LLF:</strong>Least Laxity First - EVs are charged in order of lowest laxity<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Simple:</strong> Laxity only calculated upon EV arrival<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Smart:</strong> Laxity is updated every minute<br>
+           <strong>DSAC:</strong> Decision Scheduling Admission Control - EVs are scheduled in a profit maximization scheme
+        </p>
+        <br>
+        <p><strong>Admission Control:</strong> The algorithm will limit the number of vehicles it accepts<br>
+          <strong>Full Admission:</strong> All vehicles are admitted<br>
+          <strong>Profit Maximization:</strong> Vehicle are admitted if total profit is predicted to increase
+        </p>
+
+        <br>
+    
+        <h5>The table below details the key differences between each of the algorithms that we implemented.</h5>
+
+        <br>
+        <table border="1">
+            <tr>
+                <td><strong>Algorithm</strong></td>
+                <td><strong>Static Queue(s)</strong></td>
+                <td><strong>Dynamic Queue(s)</strong></td>
+                <td><strong>Single Queue</strong></td>
+                <td><strong>Multiple Queues</strong></td>
+                <td><strong>No AC</strong></td>
+                <td><strong>Basic AC</strong></td>
+                <td><strong>Full AC</strong></td>
+                <td><strong>Profit Max.</strong></td>
+            </tr>
+            <tr>
+                <td><strong>FCFS</strong></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>FCFS AC</strong></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>EDF</strong></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>EDF AC Basic</strong></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>EDF AC Pro</strong></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>LLF Simple</strong>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>LLF Simple AC Basic</strong></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>LLF Simple AC Pro</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>LLF Smart</strong></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>LLF Smart AC Basic</strong></td>
+                <td></td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>DSAC</strong></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+            </tr>
+        </table>
+
+        <br><br>
+        <h5>To accurately test our model, we decided to have our model simulate on common electric vehicles that are currently on the road.  They are detailed below along with some stats.</h5>
+        <br>
+        <p><strong>make / battery capacity / frequency of occurence in simulation</stong><br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://en.wikipedia.org/wiki/Chevrolet_Volt">Chevy Volt</a> / 16 KWh / 58.9%<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://en.wikipedia.org/wiki/Nissan_Leaf">Nissan Leaf</a> / 24 KWh / 35.3%<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://en.wikipedia.org/wiki/Tesla_Model_S">Tesla Model S</a> / 60 KWh / 5.9%</p>
+
+            <br>
+
     </section>
     <section id="analytics">
         <h3>Analytics</h3>
