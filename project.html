@@ -45,6 +45,8 @@ permalink: /project.html
     </section>
     <section id="model">
         <h3>Model</h3>
+        <h5>As with every simulation, ours cannot be a perfect representation of the physical world.  Our Python model simplifies some aspects, but takes most components into consideration.  Below are some of its properties:</h5>
+        <br>
         <ul>
             <li>Vehicles arrive with a given charge level, desired charge, a time they need to leave by, and a battery capacity</li>
             <li>Vehicles arrive according to a Poisson Distribution that has a specified average arrival rate</li>
@@ -54,8 +56,33 @@ permalink: /project.html
             <li>The algorithms operate in real time.  They do not have any knowledge of future events and make their decisions based off available information.</li>
             <li>Profit is collected from finished jobs.  Partial profit is collected from incomplete jobs with a fixed penalty.  There is no penalty for declined vehicles.</li>
             <li>Vehicles charge at a linear rate - in reality vehicles charge on a logarithmic curve</li>
-
+            <li>All simulations are done in discrete time.  The model advances at intervals of 1 minute</li>
+            <li>New vehicles can arrive at the beginning of each minute</li>
+            <li>At the end of each minute, charge is given to EVs that were in the charge ports and the algorithm makes calculations to determine if any changes need to be made on the new state.</li>
+            <li>Changes occur if EV finished charging, hits its deadline, or a more important vehicle arrived. A vehicle importance is calculated based on the algorithm being used.</li>
         </ul>
+        <br>
+        <h5>Below is a description of the types of algorithms that we built.</h5>
+        <br>
+        <p><strong>FCFS:</strong> First Come First Serve - EVs are charged in order of their arrival time</br>
+           <strong>EDF:</strong> Earliest Deadline First - EVs are charged in order of their deadline<br><br>
+           <em>Laxity = 1 - ( time required to charge / total time at the lot )</em><br><br>
+           <strong>LLF:</strong>Least Laxity First - EVs are charged in order of lowest laxity<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Simple:</strong> Laxity only calculated upon EV arrival<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Smart:</strong> Laxity is updated every minute<br>
+           <strong>DSAC:</strong> Decision Scheduling Admission Control - EVs are scheduled in a profit maximization scheme
+        </p>
+        <br>
+        <p><strong>Admission Control:</strong> The algorithm will limit the number of vehicles it accepts<br>
+          <strong>Full Admission:</strong> All vehicles are admitted<br>
+          <strong>Profit Maximization:</strong> Vehicle are admitted if total profit is predicted to increase
+        </p>
+
+
+        <br>
+    
+        <h5>The table below details the key differences between each of the algorithms that we implemented.</h5>
+
         <br>
         <table border="1">
             <tr>
@@ -194,26 +221,6 @@ permalink: /project.html
 
         <br><br>
 
-        <p><strong>FCFS:</strong> First Come First Serve - EVs are charged in order of their arrival time</br>
-           <strong>EDF:</strong> Earliest Deadline First - EVs are charged in order of their deadline<br><br>
-           <em>Laxity = 1 - ( time required to charge / total time at the lot )</em><br><br>
-           <strong>LLF:</strong>Least Laxity First - EVs are charged in order of lowest laxity<br>
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Simple:</strong> Laxity only calculated upon EV arrival<br>
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Smart:</strong> Laxity is updated every minute<br>
-           <strong>DSAC:</strong> Decision Scheduling Admission Control - EVs are scheduled in a profit maximization scheme
-        </p>
-        <br>
-        <p><strong>Admission Control:</strong> The algorithm will limit the number of vehicles it accepts<br>
-          <strong>Full Admission:</strong> All vehicles are admitted<br>
-          <strong>Profit Maximization:</strong> Vehicle are admitted if total profit is predicted to increase
-        </p>
-        <br>
-        <ul>
-            <li>All simulations are done in discrete time.  The model advances at intervals of 1 minute</li>
-            <li>New vehicles can arrive at the beginning of each minute</li>
-            <li>At the end of each minute, charge is given to EVs that were in the charge ports and the algorithm makes calculations to determine if any changes need to be made on the new state.</li>
-            <li>Changes occur if EV finished charging, hits its deadline, or a more important vehicle arrived. A vehicle importance is calculated based on the algorithm being used.</li>
-        </ul>
 
     </section>
     <section id="data">
