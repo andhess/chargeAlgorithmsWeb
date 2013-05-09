@@ -229,8 +229,29 @@ permalink: /project.html
     </section>
     <section id="analytics">
         <h3>Analytics</h3>
-        <p>LOTS OF TEXT</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p><img src="assets/images/profitACPlot.png"></p>
+        <p>DSAC is most profitable for low to medium load, then FCFS AC takes over.</p>
+        <p><img src="assets/images/profitNonAC.png"></p>
+        <p>Non-AC algorithms produce more profit unless there is a very high load or a large penalty coefficient. DSAC has slightly less profit but is far more robust.</p>
+        <p><img src="assets/images/successRateAC.png"></p>
+        <p>DSAC is best for low to medium load, then FCFS takes over. Success rate is defined as completed EVS / total EVs in the simulation.</p>
+        <p><img src="assets/images/successRateNonAC.png"></p>
+        <p>DSAC is best overall. Especially once the load increases. Success rate is defined as completed EVS / total EVs in the simulation.</p>
+        <p><img src="assets/images/chargeDistancesAC.png"></p>
+        <p>DSAC excels. This metric defines how many EVs are at least partially charged. Charging all cars a little is better than charge only some to completion which is less practical in reality.</p>
+        <p><img src="assets/images/chargeDistanceEq.png" class="shiftRight"></p>
+        <p><img src="assets/images/chargeDistancesNonAC.png"></p>
+        <p>All Non-AC algorithms are far better because they partially charge almost every EV but this causes their low success rate.</p>
+        <p><img src="assets/images/chargeDistanceEq.png" class="shiftRight"></p>
+        <p><img src="assets/images/fcfsacHeat.png"></p>
+        <p>Shows how profit is affected with an increasing number of charge ports against an increasing arrival rate on the FCFS AC algorithm.  Note how profit always increases with an increase in arrival rate or the number of charge ports.</p>
+        <p><img src="assets/images/dsacHeat.png"></p>
+        <p>Shows how profit is affected with an increasing number of charge ports against an increasing arrival rate on the DSAC algorithm.  Note how it doesn’t follow the same pattern as FCFS AC.</p>
+        <p><img src="assets/images/fcfsHeat.png"></p>
+        <p>Shows how profit is affected with an increasing number of charge ports against an increasing arrival rate on the FCFS algorithm.  Note how this algorithm doesn’t have nearly the same profit performance as its AC version.</p>
+        <p><img src="assets/images/dsacHeatSuccess.png"></p>
+        <p>Shows how success rate is affected with an increasing number of charge ports against an increasing arrival rate on the DSAC algorithm.  As expected, success rate remains high with a low arrival rate.  Also observe how a lot can maintain performance at a higher arrival rates when more charge ports are available.</p>
+
     </section>
     <section id="conclusion">
         <h3>Conclusion</h3>
