@@ -1,3 +1,28 @@
+
+/* Fonts */
+
+body, .mobileNav{
+    background: #fcfcfc;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, .brand{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Colors (or lack there of) */
+
+a, p, h1, h2, h3, h4, h5, ul, li{
+    color: #525252;
+}
+
+a:hover, a h1:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+
 /* Footer
 -------------------------------------------------- */
 

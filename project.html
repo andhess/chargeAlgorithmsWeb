@@ -29,7 +29,6 @@ permalink: /project.html
     </section>
     <section id="Goals">
         <h3>Goals</h3>
-
         <ul>
             <li>Research the charging demands of electric vehicles on the power grid</li>
             <li>Create a realistic simulation of EVs arriving at a parking lot with various charging requirements</li>
@@ -39,7 +38,7 @@ permalink: /project.html
     </section>
     <section id="method">
         <h3>Method</h3>
-        <p>After reading some papers written by experts in the field (see <a href="sources.html">sources</a>), we outlined which algorithms we thought were important to test and then began weighing out the different options on implementation.  We ultimately decided on building a complete simulation model from scratch in <a href="http://www.python.org/">Python</a>. This language allowed us to build quickly, without losing too much performance. It also is very easy use from an object-oriented sense, which was vital for a program of this complexity. We built a CSV output system into our model, and then did all data processing and analysis in <a href="http://www.mathworks.com/products/matlab/">Matlab</a>.
+        <p>After reading some papers written by experts in the field (see <a href="sources.html">sources</a>), we outlined which algorithms we thought were important to test and then began weighing out the different options on implementation.  We ultimately decided on building a complete simulation model from scratch in <a href="http://www.python.org/">Python</a>. This language allowed us to build quickly, without losing too much performance. It also is very easy use from an object-oriented sense, which was vital for a program of this complexity. We built a CSV output system into our model, and then did all data processing and analysis in <a href="http://www.mathworks.com/products/matlab/">Matlab</a>.</p>
     </section>
     <section id="model">
         <h3>Model</h3>
@@ -149,7 +148,7 @@ permalink: /project.html
                 <td></td>
             </tr>
             <tr>
-                <td><strong>LLF Simple</strong>
+                <td><strong>LLF Simple</strong></td>
                 <td></td>
                 <td>X</td>
                 <td>X</td>
@@ -251,18 +250,13 @@ permalink: /project.html
         <p>Shows how profit is affected with an increasing number of charge ports against an increasing arrival rate on the FCFS algorithm.  Note how this algorithm doesn’t have nearly the same profit performance as its AC version.</p>
         <p><img src="assets/images/dsacHeatSuccess.png"></p>
         <p>Shows how success rate is affected with an increasing number of charge ports against an increasing arrival rate on the DSAC algorithm.  As expected, success rate remains high with a low arrival rate.  Also observe how a lot can maintain performance at a higher arrival rates when more charge ports are available.</p>
-
     </section>
     <section id="conclusion">
         <h3>Conclusion</h3>
-        <p>DSAC is overall the most robust algorithm; it gains very good profit and is able to charge many cars to or close to completion. In small to medium arrival rates, when the success rate is still above 50%, DSAC gains the most profit. However in the very overloaded case First Come First Serve generates the most profit, however it will also decline many vehicles which is not very practical.
-        </p><p>
-        DSAC distributes the total charge given over all EVs much better.  More cars will be at least partially charged but it will not create as much profit as FCFS during peak hours.  This is because many vehicles will not be charged to their full desired charge level.  This could be ideal as more EVs will receive at least some charge and will be able to drive to their next destination such as their home charging station. Also, with an exponential charge rate this would allow many cars to be charged to a usable level as opposed to a full cars charged to an unnecessary full charge.
-        </p><p>
-        For the charge distance vs arrival rate graph, DSAC is the clear winner among all algorithms with admission control (lower on the graph is better).  Charge distance is calculated as the sum of (charge amount desired - charge amount given)2 for every car in the simulation.  This means that all cars are getting some charge will be better than a few cars getting completely charged.  This is a much more practical metric as it allows more cars to be entered into the lot and given at least some charge so that they can get to their next destination. The only algorithms that outperform DSAC in this metric are FCFS and LLF Smart (both without admission control) . Both of these algorithms have very poor performance in profit and success rate.  DSAC arguably offers the best balance between profit, success rate, and charge distance (i.e. practicality).
-        </p><p>
-        In an actual parking lot, DSAC would benefit everyone the most. Many customers would be satisfied and the lot would generate very good profit (if not the most in low to medium arrival rates). In terms of making an EV charging lot that is practical, efficient and profitable DSAC is the clear winner. 
-        </p>
+        <p>DSAC is overall the most robust algorithm; it gains very good profit and is able to charge many cars to or close to completion. In small to medium arrival rates, when the success rate is still above 50%, DSAC gains the most profit. However in the very overloaded case First Come First Serve generates the most profit, however it will also decline many vehicles which is not very practical.</p>
+        <p>DSAC distributes the total charge given over all EVs much better.  More cars will be at least partially charged but it will not create as much profit as FCFS during peak hours.  This is because many vehicles will not be charged to their full desired charge level.  This could be ideal as more EVs will receive at least some charge and will be able to drive to their next destination such as their home charging station. Also, with an exponential charge rate this would allow many cars to be charged to a usable level as opposed to a full cars charged to an unnecessary full charge.</p>
+        <p>For the charge distance vs arrival rate graph, DSAC is the clear winner among all algorithms with admission control (lower on the graph is better).  Charge distance is calculated as the sum of (charge amount desired - charge amount given)2 for every car in the simulation.  This means that all cars are getting some charge will be better than a few cars getting completely charged.  This is a much more practical metric as it allows more cars to be entered into the lot and given at least some charge so that they can get to their next destination. The only algorithms that outperform DSAC in this metric are FCFS and LLF Smart (both without admission control) . Both of these algorithms have very poor performance in profit and success rate.  DSAC arguably offers the best balance between profit, success rate, and charge distance (i.e. practicality).</p>
+        <p>In an actual parking lot, DSAC would benefit everyone the most. Many customers would be satisfied and the lot would generate very good profit (if not the most in low to medium arrival rates). In terms of making an EV charging lot that is practical, efficient and profitable DSAC is the clear winner.</p>
     </section>
     </div>
 </div>
